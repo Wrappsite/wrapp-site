@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wrapp - Coming Soon</title>
+  <meta charset="UTF-8">
+  <title>Wrapp.site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f4f4f4;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
 </head>
-<body style="text-align: center; font-family: sans-serif; padding-top: 100px;">
-  <h1>Wrapp komt eraan!</h1>
-  <p>Een mysterieuze nieuwe manier om ervaringen te verzamelen.</p>
+<body>
+  <h1>🚧 Wrapp is coming soon 🚀</h1>
 </body>
 </html>
