@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wrapp</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background-color: #001f3f;
+      color: #fef9e7;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .logo span {
+      background-color: #fef9e7;
+      color: #001f3f;
+      border-radius: 50%;
+      padding: 0.4rem 0.75rem;
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+    nav a {
+      color: #fef9e7;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    footer {
+      background-color: #001f3f;
+      color: #fef9e7;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .form-wrapper form {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-wrapper input, .form-wrapper textarea {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-wrapper button {
+      background-color: #001f3f;
+      color: #fef9e7;
+      border: none;
+      padding: 0.75rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .form-wrapper button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><span>W</span>Wrapp</div>
+    <nav>
+      <a href="wrappers.html">Wrappers</a>
+      <a href="bedrijven.html">Bedrijven</a>
+      <a href="contact.html">Contact</a>
+      <a href="over-ons.html">Over ons</a>
+    </nav>
+  </header>
+  <main>
+
+<h1>Word een Wrapper</h1>
+<p>Als Wrapper voer je mystery visits uit op leuke locaties zoals restaurants, cafés en winkels. Je volgt een eenvoudige consumentenreis, bijvoorbeeld een maaltijd bestellen of een product kopen. Daarna vul je een korte vragenlijst in. In ruil daarvoor krijg je het product of de maaltijd gratis!</p>
+<p>Iedereen boven de 18 jaar kan zich aanmelden. Ervaring is niet nodig — plezier en eerlijkheid zijn het belangrijkst!</p>
+<div class="form-wrapper">
+  <h2>Meld je aan als Wrapper</h2>
+  <form action="https://formsubmit.co/info@wrapp.site" method="POST">
+    <input type="text" name="name" placeholder="Je naam" required>
+    <input type="email" name="email" placeholder="Je e-mailadres" required>
+    <textarea name="message" rows="5" placeholder="Vertel kort waarom je Wrapper wilt worden" required></textarea>
+    <input type="hidden" name="_subject" value="Nieuwe Wrapper aanmelding!">
+    <button type="submit">Verstuur aanmelding</button>
+  </form>
+</div>
+
+  </main>
+  <footer>
+    &copy; 2025 Wrapp. Alle rechten voorbehouden. Contact: <a href="mailto:info@wrapp.site" style="color: #fef9e7;">info@wrapp.site</a>
+  </footer>
+</body>
+</html>
