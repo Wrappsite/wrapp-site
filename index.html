@@ -1,162 +1,202 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Wrapp - Mystery Visits</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wrapp | Mystery Visits, maar dan eenvoudig</title>
   <style>
+    :root {
+      --primary: #002b5c; /* donkerblauw */
+      --accent: #ffef9f;  /* zachtgeel */
+    }
     body {
-      font-family: sans-serif;
       margin: 0;
-      background-color: #fdfae6;
-      color: #1a237e;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
     }
     header {
-      text-align: center;
-      margin-bottom: 2rem;
+      background-color: var(--primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 2rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
     }
     h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin-top: 2rem;
-      color: #333;
-    }
-    p {
-      max-width: 700px;
-      line-height: 1.6;
-    }
-    .buttons {
-      margin: 1.5rem 0;
+      color: var(--primary);
     }
     .button {
-      background-color: #1a237e;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
+      background-color: var(--primary);
+      color: white;
       border: none;
-      border-radius: 6px;
+      padding: 0.7rem 1.5rem;
       margin: 0.5rem;
-      text-decoration: none;
-      font-weight: bold;
       cursor: pointer;
+      border-radius: 6px;
+    }
+    .plans {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .plan {
+      background: white;
+      border: 2px solid var(--primary);
+      border-radius: 10px;
+      padding: 1rem;
+      flex: 1;
+      min-width: 240px;
     }
     form {
-      background-color: #fff;
-      padding: 1.5rem;
+      background: #fff;
+      padding: 1rem;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 600px;
-      width: 100%;
-      margin-top: 2rem;
+      border: 1px solid #ddd;
+      max-width: 500px;
+      margin: auto;
     }
     form input, form textarea {
       width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
       border: 1px solid #ccc;
-      border-radius: 5px;
-      font-family: inherit;
-    }
-    form button {
-      background-color: #fdd835;
-      color: #1a237e;
-      font-weight: bold;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 1rem;
+      border-radius: 6px;
     }
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
-    .contact-button {
-      background-color: transparent;
-      color: #1a237e;
-      border: 2px solid #1a237e;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+      nav a {
+        margin: 0.5rem 0;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="Wrapp logo" style="width: 80px; height: 80px; border-radius: 50%;">
-    <h1>Welkom bij Wrapp!</h1>
-    <p>Wrapp is hét mystery visit platform voor bedrijven en consumenten.</p>
+    <div class="logo">
+      <div class="logo-icon">W</div>
+      <strong>Wrapp</strong>
+    </div>
+    <nav>
+      <a href="#wrappers">Wrappers</a>
+      <a href="#bedrijven">Bedrijven</a>
+      <a href="#contact">Contact</a>
+      <a href="#overons">Over ons</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Wat doen we?</h2>
-    <p>
-      Wrapp brengt bedrijven en consumenten samen om de klantbeleving te verbeteren.
-      Bedrijven zetten opdrachten uit voor mystery visits, en consumenten – de Wrappers – voeren deze opdrachten uit.
-      Denk aan opdrachten als ‘koop een hamburger bij McDonald’s’ of ‘haal een fles zeep bij Carrefour’.
-      In ruil daarvoor krijgt de Wrapper het product of de maaltijd gratis.
-    </p>
+  <main>
+    <section>
+      <h1>Welkom bij Wrapp</h1>
+      <p>Wij brengen bedrijven en consumenten samen voor betere klantbeleving.</p>
+      <button class="button">Download App (iOS)</button>
+      <button class="button">Download App (Android)</button>
+      <button class="button">Webapp voor bedrijven</button>
+    </section>
 
-    <p>
-      We richten ons op restaurants, koffiebarretjes, franchises en supermarkten met meerdere locaties
-      zoals McDonald’s, Starbucks, Burger King, Coffee Company, Carrefour Express, enzovoorts.
-    </p>
+    <section id="wrappers">
+      <h2>Voor Wrappers</h2>
+      <p>Als Wrapper voer je leuke mystery visits uit in ruil voor een gratis product of maaltijd. Denk aan een hamburger bij McDonald's of een koffie bij Starbucks. Je beoordeelt de klantreis aan de hand van een vragenlijst. Zo help jij bedrijven verbeteren én profiteer je zelf.</p>
+    </section>
 
-    <p>
-      Wrapp maakt mystery visits simpel, snel en digitaal. Binnen één dag kan een bedrijf opdrachten live zetten én
-      kan een consument zich aanmelden en een mystery visit doen.
-    </p>
+    <section id="bedrijven">
+      <h2>Voor bedrijven</h2>
+      <p>Via Wrapp kun je snel en eenvoudig mystery visits organiseren. Geen offertes, vergaderingen of gedoe meer.</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>Basis</h3>
+          <p>€40 / maand / vestiging</p>
+          <p>1 visit per maand</p>
+          <p>Tot 7 vestigingen</p>
+        </div>
+        <div class="plan">
+          <h3>Pro</h3>
+          <p>€60 / maand / vestiging</p>
+          <p>Onbeperkt visits</p>
+          <p>Tot 7 vestigingen</p>
+        </div>
+        <div class="plan">
+          <h3>Enterprise</h3>
+          <p>7+ vestigingen</p>
+          <p>Neem contact met ons op</p>
+          <button class="button" onclick="location.href='mailto:info@wrapp.site'">Contact</button>
+        </div>
+      </div>
+    </section>
 
-    <p>
-      Ons abonnementsmodel is flexibel: 1 opdracht per maand, onbeperkt (tot 7 locaties), of enterprise (7+ locaties).
-      Bedrijven maken zelf aantrekkelijke opdrachten om voldoende Wrappers aan te trekken.
-    </p>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Je kunt ons bereiken via <a href="mailto:info@wrapp.site">info@wrapp.site</a></p>
+      <p>Bedrijfsadres: Hoofdstraat 123, 1000 AA Amsterdam</p>
+      <p>Telefoon: 06-12345678</p>
+    </section>
 
-    <p>
-      Onze missie: <strong>kwalitatieve feedback toegankelijk maken</strong>.
-    </p>
-  </section>
+    <section>
+      <h2>Meld je aan als Wrapper</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Naam:</label>
+        <input type="text" name="naam" required>
+        <label>E-mailadres:</label>
+        <input type="email" name="email" required>
+        <label>Waarom wil je Wrapper worden?</label>
+        <textarea name="motivatie" rows="4" required></textarea>
+        <button type="submit" class="button">Verstuur aanmelding</button>
+      </form>
+    </section>
 
-  <section>
-    <h2>Download de app of ga naar de zakelijke portal</h2>
-    <div class="buttons">
-      <a href="#" class="button">iOS App (binnenkort)</a>
-      <a href="#" class="button">Android App (binnenkort)</a>
-      <a href="#" class="button">Zakelijke Portal</a>
-    </div>
-  </section>
-
-  <section>
-    <h2>Word Wrapper!</h2>
-    <p>Vul hieronder je gegevens in als je mee wilt doen als mystery visitor. We nemen contact met je op.</p>
-
-    <form action="https://formsubmit.co/info@wrapp.site" method="POST">
-      <input type="text" name="naam" placeholder="Je naam" required>
-      <input type="email" name="email" placeholder="Je e-mailadres" required>
-      <textarea name="motivatie" placeholder="Waarom wil je Wrapper worden?" rows="4" required></textarea>
-
-      <!-- Anti-spam -->
-      <input type="text" name="_honey" style="display:none">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="Nieuwe aanmelding als Wrapper!">
-      <input type="hidden" name="_template" value="table">
-
-      <button type="submit">Aanmelden</button>
-    </form>
-  </section>
+    <section id="overons">
+      <h2>Over Wrapp</h2>
+      <p>Wij liepen er zelf tegenaan hoe ingewikkeld en ouderwets het was om een mystery visit in te richten. Veel papierwerk, offertes, en lange doorlooptijden. Dat moest beter kunnen! Wrapp digitaliseert en vereenvoudigt het hele proces. Zo maken we kwalitatieve feedback toegankelijk voor elk bedrijf.</p>
+    </section>
+  </main>
 
   <footer>
-    <p>📩 <a class="contact-button" href="mailto:info@wrapp.site">Contact: info@wrapp.site</a></p>
-    <p>© 2025 Wrapp – Making qualitative feedback accessible.</p>
+    &copy; 2025 Wrapp. Alle rechten voorbehouden.
   </footer>
-
 </body>
 </html>
