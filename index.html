@@ -1,206 +1,29 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta name="google-site-verification" content="1HFuFAXwvOyvmmhaDrvpq20b_DWRbzVpIcZS7kFrO6E" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wrapp</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-    }
-
-    header {
-      background-color: #001f3f;
-      color: #ffeb8a;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo-circle {
-      background-color: #ffeb8a;
-      color: #001f3f;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 24px;
-      margin-right: 10px;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-    }
-
-    nav a {
-      color: #ffeb8a;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      padding: 3rem 2rem;
-      text-align: center;
-      background: #001f3f;
-      color: #fff;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .cta-buttons a {
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #001f3f;
-      color: #ffeb8a;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .form-section {
-      background-color: #eef3f7;
-      padding: 2rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    form input, form textarea {
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-
-    form button {
-      padding: 0.75rem;
-      background-color: #001f3f;
-      color: #ffeb8a;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    .plans {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .plan {
-      border: 2px solid #001f3f;
-      border-radius: 12px;
-      padding: 1rem;
-      width: 250px;
-      background: #fff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #001f3f;
-      color: #ffeb8a;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapp</title>
+    <style>
+        body {
+            background-color: #170556;
+            color: #FEFA8B;
+            font-family: 'DM Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <div class="logo-circle">W</div>
-      <strong>Wrapp</strong>
+    <div>
+        <h1>WRAPP</h1>
+        <h2>Mystery visit platform</h2>
+        <h3>Coming soon!</h3>
     </div>
-    <nav>
-      <a href="#wrappers">Wrappers</a>
-      <a href="#bedrijven">Bedrijven</a>
-      <a href="#contact">Contact</a>
-      <a href="#over-ons">Over ons</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Onze naam is Wrapp!</h1>
-    <p>Het platform dat bedrijven en consumenten samenbrengt voor betere klantbeleving via mystery visits.</p>
-    <div class="cta-buttons">
-      <a href="#">📱 iOS App</a>
-      <a href="#">📱 Android App</a>
-      <a href="#">💼 Zakelijke Webapplicatie</a>
-    </div>
-  </section>
-
-  <section class="section" id="wrappers">
-    <h2>Wrappers</h2>
-    <p>Als Wrapper krijg je gratis producten of maaltijden in ruil voor het uitvoeren van mystery visits. Je volgt een klantreis zoals 'bestel een hamburger bij McDonald's' en vult daarna vragen in over je ervaring. Meld je hieronder aan!</p>
-  </section>
-
-  <section class="section" id="bedrijven">
-    <h2>Voor bedrijven</h2>
-    <p>Gebruik Wrapp om snel, eenvoudig en digitaal mystery visits in te zetten. Geen papierwerk of eindeloze meetings meer!</p>
-    <div class="plans">
-      <div class="plan">
-        <h3>Basis</h3>
-        <p>€40 / maand / vestiging</p>
-        <p>1 visit p/mnd, max 7 vestigingen</p>
-      </div>
-      <div class="plan">
-        <h3>Pro</h3>
-        <p>€60 / maand / vestiging</p>
-        <p>Onbeperkt visits, max 7 vestigingen</p>
-      </div>
-      <div class="plan">
-        <h3>Enterprise</h3>
-        <p>7+ vestigingen</p>
-        <p><a href="mailto:info@wrapp.site">Neem contact op</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="form-section" id="contact">
-    <h2>Contact</h2>
-    <p>Mail ons via <a href="mailto:info@wrapp.site">info@wrapp.site</a></p>
-
-    <form action="https://formsubmit.co/info@wrapp.site" method="POST">
-      <input type="text" name="naam" placeholder="Jouw naam" required>
-      <input type="email" name="email" placeholder="Jouw e-mailadres" required>
-      <textarea name="bericht" placeholder="Waarom wil je een Wrapper worden of wat is je vraag?" rows="5" required></textarea>
-      <button type="submit">Verstuur</button>
-    </form>
-  </section>
-
-  <section class="section" id="over-ons">
-    <h2>Over ons</h2>
-    <p>Wrapp is ontstaan vanuit frustratie over het ingewikkelde en dure proces van traditionele mystery visits. Wij geloven dat kwalitatieve feedback simpel, snel en betaalbaar moet zijn. Daarom maken we met Wrapp een moderne, digitale en gebruiksvriendelijke oplossing. Mystery visiting moet leuk, eenvoudig en toegankelijk zijn – voor iedereen!</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Wrapp. Alle rechten voorbehouden.
-  </footer>
 </body>
 </html>
